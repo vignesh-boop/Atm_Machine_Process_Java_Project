@@ -36,9 +36,9 @@ public class AtmOperationImpliments implements AtmOperationInterface {
 
     public void depositeAmount(double depositeAmount) {
         System.out.println("---------------------------------------------------------------");
-        System.out.println(depositeAmount + " HAS BEEN DEPOSITED TO YOUR ACCOUNT");
+        System.out.println(depositeAmount + " HAS BEEN DEPOSITED TO YOUR SAVINGS ACCOUNT");
 
-        mini.put(depositeAmount, "Deposited");
+        mini.put(depositeAmount, "AMOUNT Deposited");
         atm.setBalance(atm.getBalance() + depositeAmount);
         viewBalance();
     }
